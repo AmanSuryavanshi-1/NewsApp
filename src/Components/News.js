@@ -44,11 +44,10 @@ const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&categ
   }
 }
 
-
 useEffect(()=>{
   document.title=`${capitalizeFirstLetter(props.category)} - NewsMonkey`;
   updateNews();
-  
+// eslint-disable-next-line
 },[])
 
 
